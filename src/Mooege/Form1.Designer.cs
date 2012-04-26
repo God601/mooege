@@ -37,9 +37,9 @@
             this.restartD3GSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.restartBNetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configD3GSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.playMusicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadMusicToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configMapsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -126,13 +126,6 @@
             this.configD3GSToolStripMenuItem.Text = "Config D3GS";
             this.configD3GSToolStripMenuItem.Click += new System.EventHandler(this.configD3GSToolStripMenuItem_Click);
             // 
-            // configMapsToolStripMenuItem
-            // 
-            this.configMapsToolStripMenuItem.Name = "configMapsToolStripMenuItem";
-            this.configMapsToolStripMenuItem.Size = new System.Drawing.Size(94, 20);
-            this.configMapsToolStripMenuItem.Text = "Logs";
-            this.configMapsToolStripMenuItem.Click += new System.EventHandler(this.configMapsToolStripMenuItem_Click);
-            // 
             // playMusicToolStripMenuItem
             // 
             this.playMusicToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -147,6 +140,13 @@
             this.loadMusicToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.loadMusicToolStripMenuItem.Text = "Load Music";
             this.loadMusicToolStripMenuItem.Click += new System.EventHandler(this.loadMusicToolStripMenuItem_Click);
+            // 
+            // configMapsToolStripMenuItem
+            // 
+            this.configMapsToolStripMenuItem.Name = "configMapsToolStripMenuItem";
+            this.configMapsToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.configMapsToolStripMenuItem.Text = "Mooege.org";
+            this.configMapsToolStripMenuItem.Click += new System.EventHandler(this.configMapsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 

@@ -36,11 +36,15 @@ namespace Mooege
             //progressBar1.Maximum = 100;
             //progressBar1.Value = 0;
             //RichTextBox Console
-            richTextBox1.Text += "Copyright (C) 2009-2011 The AllMightyOne's Project\n\f";
-            richTextBox1.Text += "[D3GS] D3Mighty Revision 1 is loading... \n";
+            richTextBox1.Text += "Copyright (C) 2009-2012 The AllMightyOne's Project\n\f";
+            richTextBox1.Text += "[D3GS] D3Mighty Revision 2 is loading... \n";
             StartupServers();
             StartupCommand();
             richTextBox1.Text += "[D3GS] D3Mighty Loaded Successfuly! \n\f";
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine(@"[D3GS] D3Mighty Loaded Successfuly!");
+            richTextBox1.Text += "[INFO] To Login, please use the account : test@ / pass : adminpass \n\f";
             //progressBar1.Value = 100;
 
         }
@@ -108,7 +112,6 @@ namespace Mooege
             var bnetServerThread = new Thread(_bnetServer.Run) { IsBackground = true };
             bnetServerThread.Start();
             pvpgn.richTextBox1.Text += "[D3GS] Bnet Server Loaded Successfuly! \n\f";
-
             //pvpgn.progressBar1.Value = 50;
 
         }
@@ -147,7 +150,7 @@ namespace Mooege
 
         private void configMapsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("logs\\mooege.txt");
+            System.Diagnostics.Process.Start("http://mooege.org/");
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
@@ -157,17 +160,21 @@ namespace Mooege
         private void restartD3GSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox1.Text += "[D3GS] D3GS Is Restarting... \n";
+            Console.WriteLine(@"[ Info] D3GS Is Restarting...");
             _gameServer.Shutdown();
             StartupD3GS();
             richTextBox1.Text += "[D3GS] D3GS Restarted Successfuly \n\f";
+            Console.WriteLine(@"[ Info] D3GS Restarted Successfuly");
         }
 
         private void restartBNetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox1.Text += "[D3GS] BNet Is Restarting... \n";
+            Console.WriteLine(@"[ Info] BNet Is Restarting...");
             _bnetServer.Shutdown();
             StartupBNet();
             richTextBox1.Text += "[D3GS] BNet Restarted Successfuly \n\f";
+            Console.WriteLine(@"[ Info] BNet Restarted Successfuly");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
